@@ -681,10 +681,8 @@ h3 {
 
 .container .gold-lines {
 	position: absolute;
-	top: 0;
-	/* left: -5px; */
-	height: 300px;
-	width: 400px;
+	max-height: 350px;
+	max-width: 450px;
 	margin: 0;
 	padding: 0;
 }
@@ -929,11 +927,13 @@ h3 {
 	font-size: clamp(1.2rem, 3vw, 1.9rem);
 }
 
-#about-us .gold-lines {
+#about-us .gold-lines,
+#contact .gold-lines {
 	top: 120px;
 }
 
-#about-us .gray-block {
+#about-us .gray-block,
+#contact .gray-block {
 	top: 0;
 }
 
@@ -1342,13 +1342,14 @@ h3 {
 	height: calc(100vh - 220px);
 } */
 
-#contact .header {
+/* #contact .header {
 	padding-top: 2rem;
 	margin-bottom: 0;
 	height: 250px;
-}
+} */
 
 .contact-container {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -1503,6 +1504,21 @@ textarea {
 	font-weight: bold;
 	transition: all 0.3s;
 	box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.464);
+}
+
+.contact-container .contact-column:first-child {
+	z-index: -5;
+}
+.contact-container .contact-column:last-child {
+	z-index: 15;
+}
+
+.bottom-gold-lines {
+	position: absolute;
+	bottom: -65px;
+	left: 0;
+	transform: scaleY(-1);
+	z-index: 5;
 }
 
 footer {
@@ -1807,7 +1823,8 @@ footer {
 		left: 0;
 		/* top: 70px; */
 	}
-	#about-us .gold-lines {
+	#about-us .gold-lines,
+	#contact .gold-lines {
 		top: 80px;
 	}
 	/* .slider-container {
@@ -1836,18 +1853,19 @@ footer {
 		margin-bottom: 0;
 		margin-right: 1rem;
 	}
-	#why-hire .header {
+	#why-hire .header,
+	#contact .header {
 		max-height: 200px;
 		padding: 0;
 		margin: 0;
 	}
-	#contact .header {
+	/* #contact .header {
 		padding-top: 0;
 		padding: 0;
 		margin: 0;
 		margin-bottom: 0;
 		max-height: 250px;
-	}
+	} */
 	.contact-us {
 		margin: 0;
 	}
