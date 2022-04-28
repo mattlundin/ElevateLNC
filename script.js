@@ -5,8 +5,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const nav = document.querySelector('.nav');
 const navList = document.querySelectorAll('.nav-list');
-const logo = document.querySelector('.logo');
-const logoImg = document.querySelector('.logo img');
+const logo = document.querySelector('.nav-logo');
+// const logoImg = document.querySelector('.nav-logo img');
 
 window.addEventListener('scroll', sizeNav);
 
