@@ -146,7 +146,7 @@ h3 {
 }
 
 .btn {
-	display: block;
+	/* display: block; */
 	height: 70px;
 	width: 250px;
 	padding: 10px 0;
@@ -183,12 +183,16 @@ h3 {
 	box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.464);
 }
 
+.btn:hover {
+	transform: scale(0.9);
+}
+
 .btn-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	/* height: 50px; */
-	margin: 2rem 0;
+	margin: 0;
 	padding: 0;
 	text-decoration: none;
 	z-index: 50;
@@ -220,6 +224,7 @@ h3 {
 	justify-content: center;
 	text-align: center;
 	height: 300px;
+	/* margin: 13rem 0 2rem; */
 	/* margin-top: -30px; */
 	padding: 1rem;
 	/* background: radial-gradient(
@@ -277,18 +282,18 @@ h3 {
 	grid-template-columns: repeat(2, 1fr); */
 	/* height: calc(100vh + 150px); */
 	display: flex;
-	height: 100vh;
+	/* height: calc(100vh - 120px); */
 }
 
 .home-top-left {
 	/* grid-column: 1 / 2; */
 	flex-direction: column;
-	height: calc(100vh - 120px);
+	/* height: calc(100vh - 120px); */
 	width: 50%;
 }
 
 .home-top-right {
-	height: 100%;
+	/* height: calc(100vh - 120px); */
 	width: 50%;
 }
 .home-img {
@@ -349,7 +354,7 @@ h3 {
 .video-container {
 	/* grid-column: auto; */
 	position: relative;
-	height: calc(100% - 120px);
+	height: calc(100vh - 120px);
 	/* object-fit: cover; */
 }
 
@@ -630,7 +635,7 @@ h3 {
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.464);
 }
 
-.banner-container {
+/* .banner-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -642,16 +647,20 @@ h3 {
 	width: 100%;
 	margin: 1rem 0 3rem;
 	box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.464);
-}
+} */
 
 .florence-banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	max-height: 550px;
-	width: 80%;
+	width: 100%;
+	margin: 4rem 0 3rem;
 }
 
 .florence-banner img {
-	height: 100%;
-	width: 100%;
+	max-height: 100%;
+	width: 80%;
 }
 
 /* .banner-text {
@@ -693,11 +702,11 @@ h3 {
 
 .services-top .header h1 {
 	/* font-size: 3.5rem; */
-	font-size: clamp(1.7rem, 5vw, 3.5rem);
+	font-size: clamp(2rem, 5vw, 3.5rem);
 	font-weight: bold;
 }
 
-.banner-container h2 {
+/* .banner-container h2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -706,7 +715,7 @@ h3 {
 	font-size: 3rem;
 	border-radius: 10%;
 	transform: translate(-50%, -50%);
-}
+} */
 
 .services-btn {
 	margin-bottom: 3rem;
@@ -1137,10 +1146,10 @@ h3 {
 
 .gold-circle {
 	position: absolute;
-	top: -35px;
-	left: -40px;
-	height: 610px;
-	width: 610px;
+	top: 35px;
+	left: 30px;
+	height: 430px;
+	width: 430px;
 }
 
 .name {
@@ -1204,9 +1213,10 @@ h3 {
 }
 
 /** Why hire with LNC */
-/* #why-hire .header {
-	max-height: 400px;
-} */
+#why-hire .header {
+	padding-bottom: -1rem;
+}
+
 .box-container {
 	position: relative;
 	display: flex;
@@ -1219,7 +1229,7 @@ h3 {
 .box-container p {
 	text-align: center;
 	width: 70%;
-	margin: 2rem 0;
+	margin-bottom: 2rem;
 	/* font-size: 1.2rem; */
 	background-color: var(--off-white);
 }
@@ -1321,13 +1331,13 @@ h3 {
 	margin-top: 0;
 }
 
-/* #different .btn-container {
+#different .btn-container {
 	margin-bottom: 3rem;
-} */
+}
 
 .why {
 	text-align: center;
-	margin-bottom: 3rem;
+	margin: 1rem 0 2rem;
 	font-size: 2.5rem;
 }
 
@@ -1361,7 +1371,7 @@ h3 {
 	text-align: center;
 	margin-top: 3rem;
 	/* font-family: 'Montserrat', sans-serif; */
-	font-size: clamp(2rem, 5vw, 2.5rem);
+	font-size: clamp(2rem, 5vw, 2.7rem);
 }
 
 .contact-row {
@@ -1620,9 +1630,12 @@ footer {
 		max-height: px;
 	} */
 	.florence-banner {
-		height: auto;
-		max-height: 100%;
-		width: 80%;
+		/* height: auto; */
+		/* max-height: 100%; */
+		width: 100%;
+	}
+	.florence-banner img {
+		width: 96%;
 	}
 	.name {
 		margin-left: -12rem;
@@ -1634,17 +1647,20 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+	.video-container {
+		height: 80vh;
+	}
 	.home-top {
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		height: auto;
 	}
 	.home-top-left,
 	.home-top-right {
 		width: 100%;
 	}
 	.home-img {
-		max-height: 60%;
+		height: 60%;
 	}
 	.home-img img {
 		height: 100%;
@@ -1843,6 +1859,7 @@ footer {
 	}
 	.top {
 		max-width: 95%;
+		margin-bottom: 2.5rem;
 	}
 	.row,
 	.bottom-row {
@@ -1855,9 +1872,12 @@ footer {
 	}
 	#why-hire .header,
 	#contact .header {
-		max-height: 200px;
+		/* max-height: 200px; */
 		padding: 0;
 		margin: 0;
+	}
+	.box-container {
+		padding-top: 0;
 	}
 	/* #contact .header {
 		padding-top: 0;
@@ -1867,7 +1887,10 @@ footer {
 		max-height: 250px;
 	} */
 	.contact-us {
-		margin: 0;
+		margin: 2rem 0 0;
+	}
+	.contact-container {
+		margin: 2rem 0 0;
 	}
 	/* .banner-text {
 		padding: 1rem;
@@ -1926,6 +1949,9 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+	.services-desc {
+		width: 90%;
+	}
 	.column {
 		margin: 0;
 		padding: 1rem 0;
@@ -1936,7 +1962,7 @@ footer {
 	.about-desc {
 		width: 100%;
 	}
-	.florence-banner {
+	.florence-banner img {
 		width: 100%;
 	}
 	.bottom-row {
@@ -1960,6 +1986,22 @@ footer {
 	}
 	.aff-box p {
 		font-size: 14px;
+	}
+	/* .form-container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	} */
+	.contact-container {
+		margin: 0;
+	}
+	.form-container h3 {
+		margin: 0.5rem;
+		font-size: 1.4rem;
+	}
+	.contact-form {
+		margin: 0;
+		padding: 5px;
 	}
 }
 @media screen and (max-width: 450px) {
@@ -1985,6 +2027,9 @@ footer {
 		height: calc(100vh - 120px);
 		margin-top: 120px;
 	} */
+	.btn {
+		font-size: 1.2rem;
+	}
 	.video-container {
 		height: calc(100vh - 120px);
 	}
@@ -1992,10 +2037,16 @@ footer {
 		height: 100%;
 	}
 	.home-testimonial {
-		padding: 2rem;
+		padding: 2rem 2rem 0 4rem;
+		font-size: 1.2rem;
 	}
+	.home-testimonial h3 {
+		font-size: 1.2rem;
+	}
+	/* .home-testimonial p {
+		margin-top: 0.5rem;
+	} */
 	.florence-banner {
-		height: 300px;
-		width: 80%;
+		height: auto;
 	}
 }
