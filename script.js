@@ -290,7 +290,7 @@ if (document.body.classList == 'services-page') {
 			opacity: 1,
 			delay: 0.4,
 			stagger: 0.5,
-			duration: 0.5,
+			duration: 0.9,
 		});
 		gsap.to(
 			'.top-box p',
