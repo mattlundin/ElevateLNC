@@ -1478,6 +1478,7 @@ h3 {
 	padding: 20px 25px;
 	border-radius: 4px;
 	box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.464);
+	z-index: 25;
 }
 
 label {
