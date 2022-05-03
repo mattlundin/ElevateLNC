@@ -99,7 +99,7 @@ for (let i = 0; i < fadeBackground.length; i++) {
 			trigger: fadeBack,
 		},
 		opacity: 0,
-		start: '20px 80%',
+		start: '10px 90%',
 		duration: 0.7,
 	});
 }
@@ -121,7 +121,7 @@ for (let i = 0; i < slideRight.length; i++) {
 	gsap.from(slideR, {
 		scrollTrigger: {
 			trigger: slideR,
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		stagger: 0.5,
 		opacity: 0,
@@ -137,7 +137,7 @@ for (let i = 0; i < slideUp.length; i++) {
 	gsap.from(slide, {
 		scrollTrigger: {
 			trigger: slide,
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		y: 100,
 		opacity: 0,
@@ -153,7 +153,7 @@ for (let i = 0; i < clipRight.length; i++) {
 	gsap.to(clipR, {
 		scrollTrigger: {
 			trigger: clipR,
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		delay: 0.5,
 		duration: 0.8,
@@ -169,7 +169,7 @@ for (let i = 0; i < zoomIn.length; i++) {
 	gsap.from(zoom, {
 		scrollTrigger: {
 			trigger: zoom,
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		scale: 0.1,
 		opacity: 0,
@@ -220,7 +220,7 @@ if (document.body.classList == 'home-page') {
 		gsap.to(hCol, {
 			scrollTrigger: {
 				trigger: hCol,
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			opacity: 1,
 			stagger: 0.8,
@@ -233,7 +233,7 @@ if (document.body.classList == 'home-page') {
 	gsap.from(stars, {
 		scrollTrigger: {
 			trigger: stars,
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		stagger: 0.09,
 		opacity: 0.5,
@@ -273,7 +273,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to('.top-box', {
 			scrollTrigger: {
 				trigger: '.top-box',
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			delay: 0.4,
 			stagger: 0.5,
@@ -284,7 +284,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to('.top-box h4', {
 			scrollTrigger: {
 				trigger: '.top-box h4',
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			y: 0,
 			opacity: 1,
@@ -309,7 +309,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to('.mid-box', {
 			scrollTrigger: {
 				trigger: '.mid-box',
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			delay: 0.4,
 			stagger: 0.5,
@@ -319,7 +319,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to('.mid-box h4', {
 			scrollTrigger: {
 				trigger: '.mid-box h4',
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			y: 0,
 			opacity: 1,
@@ -344,7 +344,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to('.bottom-box', {
 			scrollTrigger: {
 				trigger: '.bottom-box',
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			delay: 0.4,
 			stagger: 0.5,
@@ -354,7 +354,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to('.bottom-box h4', {
 			scrollTrigger: {
 				trigger: '.bottom-box h4',
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			y: 0,
 			opacity: 1,
@@ -386,7 +386,7 @@ if (document.body.classList == 'services-page') {
 			gsap.to(box, {
 				scrollTrigger: {
 					trigger: box,
-					start: '20px 80%',
+					start: '10px 90%',
 				},
 				delay: 0.4,
 				duration: 0.8,
@@ -401,7 +401,7 @@ if (document.body.classList == 'services-page') {
 			gsap.to(boxHeader, {
 				scrollTrigger: {
 					trigger: boxHeader,
-					start: '20px 80%',
+					start: '10px 90%',
 				},
 				y: 0,
 				opacity: 1,
@@ -558,7 +558,7 @@ if (document.body.classList == 'sub-page') {
 	const tlDif = gsap.timeline({
 		scrollTrigger: {
 			trigger: '#different',
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 	});
 	tlDif
@@ -611,7 +611,7 @@ if (document.body.classList == 'contact-page') {
 	gsap.from('.form-container h3', {
 		scrollTrigger: {
 			trigger: '.form-container h3',
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		y: -100,
 		duration: 1.3,
@@ -621,7 +621,7 @@ if (document.body.classList == 'contact-page') {
 	gsap.to('.clip-right', {
 		scrollTrigger: {
 			trigger: '.form-container',
-			start: '20px 80%',
+			start: '10px 90%',
 		},
 		duration: 1.5,
 		stagger: 0.4,
@@ -632,7 +632,7 @@ if (document.body.classList == 'contact-page') {
 		gsap.from(info, {
 			scrollTrigger: {
 				trigger: info,
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			x: -200,
 			opacity: 0,
