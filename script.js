@@ -311,7 +311,6 @@ if (document.body.classList == 'services-page') {
 		gsap.to(box, {
 			scrollTrigger: {
 				trigger: box,
-				start: '10px 90%',
 			},
 			// delay: 0.4,
 			duration: 1.5,
@@ -417,7 +416,7 @@ if (document.body.classList == 'about-page' || 'sub-page') {
 		gsap.from(about, {
 			scrollTrigger: {
 				trigger: about,
-				start: '20px 80%',
+				start: '10px 90%',
 			},
 			x: -200,
 			opacity: 0,
