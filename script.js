@@ -187,170 +187,171 @@ const smallMedia = window.matchMedia('(max-width: 955px)');
 
 //* ===== SERVICES =====
 
-const boxes = gsap.utils.toArray('.box');
-const boxHeaders = gsap.utils.toArray('.box h4');
-const boxPs = gsap.utils.toArray('.box p');
-
 if (document.body.classList == 'services-page') {
 	// * LARGER SCREENS FOR .BOX ELEMENTS
 
-	if (largeMedia.matches) {
-		gsap.to('.top-box', {
-			scrollTrigger: {
-				trigger: '.top-box',
-				start: '10px 90%',
-			},
-			delay: 0.4,
-			stagger: 0.5,
-			duration: 0.8,
-			'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-			boxShadow: '5px 15px 20px rgba(0, 0, 0, 0.464)',
-		});
-		gsap.to('.top-box h4', {
-			scrollTrigger: {
-				trigger: '.top-box h4',
-				start: '10px 90%',
-			},
-			y: 0,
-			opacity: 1,
-			delay: 0.4,
-			stagger: 0.5,
-			duration: 0.9,
-		});
-		gsap.to(
-			'.top-box p',
-			{
-				scrollTrigger: {
-					trigger: '.top-box p',
-				},
-				y: 0,
-				opacity: 1,
-				delay: 0.5,
-				stagger: 0.5,
-				duration: 0.5,
-			},
-			'-=.3'
-		);
-		gsap.to('.mid-box', {
-			scrollTrigger: {
-				trigger: '.mid-box',
-				start: '10px 90%',
-			},
-			delay: 0.4,
-			stagger: 0.5,
-			duration: 0.8,
-			'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-		});
-		gsap.to('.mid-box h4', {
-			scrollTrigger: {
-				trigger: '.mid-box h4',
-				start: '10px 90%',
-			},
-			y: 0,
-			opacity: 1,
-			delay: 0.4,
-			stagger: 0.5,
-			duration: 0.5,
-		});
-		gsap.to(
-			'.mid-box p',
-			{
-				scrollTrigger: {
-					trigger: '.mid-box p',
-				},
-				y: 0,
-				opacity: 1,
-				delay: 0.5,
-				stagger: 0.5,
-				duration: 0.5,
-			},
-			'-=.3'
-		);
-		gsap.to('.bottom-box', {
-			scrollTrigger: {
-				trigger: '.bottom-box',
-				start: '10px 90%',
-			},
-			delay: 0.4,
-			stagger: 0.5,
-			duration: 0.8,
-			'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-		});
-		gsap.to('.bottom-box h4', {
-			scrollTrigger: {
-				trigger: '.bottom-box h4',
-				start: '10px 90%',
-			},
-			y: 0,
-			opacity: 1,
-			delay: 0.4,
-			stagger: 0.5,
-			duration: 0.5,
-		});
-		gsap.to(
-			'.bottom-box p',
-			{
-				scrollTrigger: {
-					trigger: '.bottom-box p',
-				},
-				y: 0,
-				opacity: 1,
-				delay: 0.5,
-				stagger: 0.5,
-				duration: 0.5,
-			},
-			'-=.3'
-		);
-	}
+	// if (largeMedia.matches) {
+	// 	gsap.to('.top-box', {
+	// 		scrollTrigger: {
+	// 			trigger: '.top-box',
+	// 			start: '10px 90%',
+	// 		},
+	// 		delay: 0.4,
+	// 		stagger: 0.5,
+	// 		duration: 0.8,
+	// 		'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+	// 		boxShadow: '5px 15px 20px rgba(0, 0, 0, 0.464)',
+	// 	});
+	// 	gsap.to('.top-box h4', {
+	// 		scrollTrigger: {
+	// 			trigger: '.top-box h4',
+	// 			start: '10px 90%',
+	// 		},
+	// 		y: 0,
+	// 		opacity: 1,
+	// 		delay: 0.4,
+	// 		stagger: 0.5,
+	// 		duration: 0.9,
+	// 	});
+	// 	gsap.to(
+	// 		'.top-box p',
+	// 		{
+	// 			scrollTrigger: {
+	// 				trigger: '.top-box p',
+	// 			},
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			delay: 0.5,
+	// 			stagger: 0.5,
+	// 			duration: 0.5,
+	// 		},
+	// 		'-=.3'
+	// 	);
+	// 	gsap.to('.mid-box', {
+	// 		scrollTrigger: {
+	// 			trigger: '.mid-box',
+	// 			start: '10px 90%',
+	// 		},
+	// 		delay: 0.4,
+	// 		stagger: 0.5,
+	// 		duration: 0.8,
+	// 		'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+	// 	});
+	// 	gsap.to('.mid-box h4', {
+	// 		scrollTrigger: {
+	// 			trigger: '.mid-box h4',
+	// 			start: '10px 90%',
+	// 		},
+	// 		y: 0,
+	// 		opacity: 1,
+	// 		delay: 0.4,
+	// 		stagger: 0.5,
+	// 		duration: 0.5,
+	// 	});
+	// 	gsap.to(
+	// 		'.mid-box p',
+	// 		{
+	// 			scrollTrigger: {
+	// 				trigger: '.mid-box p',
+	// 			},
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			delay: 0.5,
+	// 			stagger: 0.5,
+	// 			duration: 0.5,
+	// 		},
+	// 		'-=.3'
+	// 	);
+	// 	gsap.to('.bottom-box', {
+	// 		scrollTrigger: {
+	// 			trigger: '.bottom-box',
+	// 			start: '10px 90%',
+	// 		},
+	// 		delay: 0.4,
+	// 		stagger: 0.5,
+	// 		duration: 0.8,
+	// 		'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+	// 	});
+	// 	gsap.to('.bottom-box h4', {
+	// 		scrollTrigger: {
+	// 			trigger: '.bottom-box h4',
+	// 			start: '10px 90%',
+	// 		},
+	// 		y: 0,
+	// 		opacity: 1,
+	// 		delay: 0.4,
+	// 		stagger: 0.5,
+	// 		duration: 0.5,
+	// 	});
+	// 	gsap.to(
+	// 		'.bottom-box p',
+	// 		{
+	// 			scrollTrigger: {
+	// 				trigger: '.bottom-box p',
+	// 			},
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			delay: 0.5,
+	// 			stagger: 0.5,
+	// 			duration: 0.5,
+	// 		},
+	// 		'-=.3'
+	// 	);
+	// }
 	//*  SMALLER SCREENS FOR .BOX ELEMENTS
+
+	const boxes = gsap.utils.toArray('.box-img-box img');
+	const boxHeaders = gsap.utils.toArray('.box h4');
+	const boxPs = gsap.utils.toArray('.box p');
 
 	for (let i = 0; i < boxes.length; i++) {
 		let box = boxes[i];
 
-		if (smallMedia.matches) {
-			gsap.to(box, {
-				scrollTrigger: {
-					trigger: box,
-					start: '10px 90%',
-				},
-				delay: 0.4,
-				duration: 0.8,
-				'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-			});
-		}
+		// if (smallMedia.matches) {
+		gsap.to(box, {
+			scrollTrigger: {
+				trigger: box,
+				start: '10px 90%',
+			},
+			// delay: 0.4,
+			duration: 1.5,
+			// 'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+			opacity: 1,
+		});
 	}
+	// }
 	for (let i = 0; i < boxHeaders.length; i++) {
 		let boxHeader = boxHeaders[i];
 
-		if (smallMedia.matches) {
-			gsap.to(boxHeader, {
-				scrollTrigger: {
-					trigger: boxHeader,
-					start: '10px 90%',
-				},
-				y: 0,
-				opacity: 1,
-				delay: 0.4,
-				duration: 0.5,
-			});
-		}
+		// if (smallMedia.matches) {
+		gsap.to(boxHeader, {
+			scrollTrigger: {
+				trigger: boxHeader,
+				start: '10px 90%',
+			},
+			y: 0,
+			opacity: 1,
+			delay: 0.4,
+			duration: 0.5,
+		});
 	}
+	// }
 	for (let i = 0; i < boxPs.length; i++) {
 		let boxP = boxPs[i];
 
-		if (smallMedia.matches) {
-			gsap.to(boxP, {
-				scrollTrigger: {
-					trigger: boxP,
-				},
-				y: 0,
-				opacity: 1,
-				delay: 0.5,
-				// stagger: 0.6,
-				duration: 0.5,
-			});
-		}
+		// if (smallMedia.matches) {
+		gsap.to(boxP, {
+			scrollTrigger: {
+				trigger: boxP,
+			},
+			y: 0,
+			opacity: 1,
+			delay: 0.5,
+			// stagger: 0.6,
+			duration: 0.5,
+		});
 	}
+	// }
 }
 
 const accordion = document.querySelectorAll('.question-btn');
