@@ -991,7 +991,7 @@ h3 {
 }
 
 .form-container h3 {
-	text-align: right;
+	text-align: center;
 	margin-bottom: 2rem;
 	margin-left: auto;
 	color: #fff;
@@ -1269,6 +1269,7 @@ footer {
 	.contact-container {
 		justify-content: center;
 		margin-bottom: 0;
+		margin-top: 0;
 	}
 	.contact-column {
 		margin: 2rem 1rem;
@@ -1441,6 +1442,10 @@ footer {
 	.services-desc {
 		width: 90%;
 	}
+	.question-btn {
+		font-size: 1.1rem;
+		font-weight: inherit;
+	}
 	.column {
 		margin: 0;
 		padding: 1rem 0;
@@ -1481,6 +1486,7 @@ footer {
 	}
 	.form-container h3 {
 		margin: 0.5rem;
+		font-size: 1.15rem;
 	}
 }
 @media screen and (max-width: 450px) {
