@@ -235,7 +235,7 @@ if (document.body.classList == 'services-page') {
 			y: 0,
 			opacity: 1,
 			delay: 0.5,
-			duration: 0.3,
+			duration: 0.5,
 		});
 	}
 }
