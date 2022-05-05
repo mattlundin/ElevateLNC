@@ -50,13 +50,6 @@ window.addEventListener('resize', () => {
 });
 
 //! Tab icon???
-var link = document.querySelector("link[rel~='icon']");
-if (!link) {
-	link = document.createElement('link');
-	link.rel = 'icon';
-	document.getElementsByTagName('head')[0].appendChild(link);
-}
-link.href = 'https://fontawesome.com/icons/briefcase-medical?s=solid';
 
 //*~~~* GSAP REUSABLES;
 gsap.to('.nav a', {
@@ -207,6 +200,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to(box, {
 			scrollTrigger: {
 				trigger: box,
+				start: '5px 98%',
 			},
 			// delay: 0.4,
 			duration: 1.5,
@@ -221,7 +215,7 @@ if (document.body.classList == 'services-page') {
 		gsap.to(boxHeader, {
 			scrollTrigger: {
 				trigger: boxHeader,
-				start: '10px 90%',
+				start: '5px 98%',
 			},
 			y: 0,
 			opacity: 1,
@@ -236,11 +230,12 @@ if (document.body.classList == 'services-page') {
 		gsap.to(boxP, {
 			scrollTrigger: {
 				trigger: boxP,
+				start: '5px 98%',
 			},
 			y: 0,
 			opacity: 1,
 			delay: 0.5,
-			duration: 0.5,
+			duration: 0.3,
 		});
 	}
 }
