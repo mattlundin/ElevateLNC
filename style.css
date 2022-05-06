@@ -926,7 +926,7 @@ h3 {
 }
 
 .form-container {
-	min-width: 300px;
+	min-width: 250px;
 	max-width: 700px;
 	margin-bottom: 2rem;
 	padding: 2rem;
@@ -1223,11 +1223,6 @@ footer {
 		margin-right: auto;
 		padding: 1rem 0.5rem;
 	}
-	.bottom-gold-lines {
-		bottom: 0;
-		height: 200px;
-		width: 250px;
-	}
 }
 
 @media screen and (max-width: 815px) {
@@ -1292,8 +1287,17 @@ footer {
 	.gold-lines {
 		height: 200px;
 		width: 250px;
-		top: 0;
+		top: 80px;
 		left: 0;
+	}
+	.bottom-gold-lines {
+		bottom: 0;
+		height: 200px;
+		width: 250px;
+	}
+	#services .gold-lines,
+	#contact .gold-lines {
+		top: 0;
 	}
 	.faq {
 		margin: 4rem auto;
@@ -1410,6 +1414,9 @@ footer {
 	.aff-box p {
 		font-size: 14px;
 	}
+	#contact .header {
+		height: auto;
+	}
 	.form-container {
 		padding: 0 10px 10px;
 	}
@@ -1418,20 +1425,26 @@ footer {
 		font-size: 1.15rem;
 	}
 }
+@media screen and (max-width: 490px) {
+	#contact .gray-block {
+		height: 200px;
+	}
+}
 @media screen and (max-width: 450px) {
 	.home-testimonial {
 		padding: 2rem 3rem 2rem 4rem;
 		font-size: 1.3rem;
 	}
-
 	.testimonial-img-container {
 		height: 530px;
 	}
-	.video-container {
-		height: 60vh;
-	}
 	.sub-link {
 		font-size: 1rem;
+	}
+	.gold-lines,
+	.bottom-gold-lines {
+		height: 150px;
+		width: 200px;
 	}
 	footer p {
 		font-size: 14px;
