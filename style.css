@@ -205,7 +205,7 @@ h3 {
 
 /* * ========== HOME ========== */
 .home-page .container {
-	margin: 120px 10px 0;
+	margin: 0 10px;
 }
 
 .home-banner {
@@ -242,7 +242,8 @@ h3 {
 } */
 
 .partner {
-	margin-bottom: 2rem;
+	text-align: center;
+	margin: 3rem 0;
 	font-size: clamp(1.2rem, 3vw, 1.9rem);
 }
 
@@ -1193,9 +1194,6 @@ footer {
 		max-height: 100%;
 		max-width: 100%;
 	} */
-	.partner {
-		margin-bottom: 2rem;
-	}
 	.home-testimonial {
 		height: 40%;
 	}
@@ -1337,9 +1335,9 @@ footer {
 	.container {
 		margin-top: 80px;
 	}
-	#home .container {
+	/* #home .container {
 		margin-top: 80px;
-	}
+	} */
 	.header {
 		height: 150px;
 		padding: 0.5rem;
