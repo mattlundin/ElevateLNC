@@ -1137,9 +1137,9 @@ footer {
 		flex-direction: column;
 		height: auto;
 	}
-	.home-testimonial {
+	/* .home-testimonial {
 		height: 40%;
-	}
+	} */
 	.home-content {
 		margin-top: 2rem;
 	}
@@ -1442,14 +1442,12 @@ footer {
 	.btn {
 		font-size: 1.2rem;
 	}
-	.video-container {
-		height: calc(100vh - 120px);
-	}
 	.home-top {
 		height: 100%;
 	}
 	.home-testimonial {
-		padding: 2rem 2rem 0 4rem;
+		margin: 0 10%;
+		padding: 2rem 5rem 1rem;
 		font-size: 1.2rem;
 	}
 	.home-testimonial h3 {
