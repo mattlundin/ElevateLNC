@@ -76,6 +76,9 @@ for (i = 0; i < accordion.length; i++) {
 	});
 }
 
+//~========== BLOG =============
+const blogPosts = [];
+
 //! Tab icon???
 
 //*~~~* GSAP
