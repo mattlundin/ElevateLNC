@@ -1036,7 +1036,7 @@ textarea {
 .blog-card {
 	display: flex;
 	flex-direction: column;
-	height: 300px;
+	height: 550px;
 	width: 450px;
 	max-width: 100%;
 	margin: 1rem;
@@ -1051,9 +1051,22 @@ textarea {
 	height: 6rem;
 	padding: 1rem;
 	font-size: 2rem;
-	background-color: var(--light-gray);
+	background-color: var(--dark-blue);
+	color: var(--off-white);
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+}
+
+.blog-img {
+	height: 250px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.blog-img img {
+	height: 100%;
+	width: 100%;
+	padding: 0.5rem;
 }
 
 .blog-card p {
@@ -1083,6 +1096,35 @@ textarea {
 
 .blog-card button:active {
 	transform: scale(0.95);
+}
+
+/** BLOG POSTS TEMPLATE  */
+
+.post-container {
+	padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.blog-title {
+	text-align: center;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.blog-body {
+	margin: 0 2rem 5rem;
+	padding: 0 10% 4rem;
+	border: 5px groove var(--dark-blue);
+}
+
+.blog-post-box {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.blog-post-box img {
+	height: 100%;
+	width: 100%;
+	margin: 1rem 0 2rem;
 }
 
 footer {
