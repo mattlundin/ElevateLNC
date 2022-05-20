@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const nav = document.querySelector('.nav');
 const navList = document.querySelectorAll('.nav-list');
