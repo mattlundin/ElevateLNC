@@ -119,24 +119,28 @@ for (let i = 0; i < zoomIn.length; i++) {
 	});
 }
 
-gsap.from('.aff-box', {
-	scrollTrigger: {
-		trigger: '.aff-box',
-		start: '10px 90%',
-	},
-	opacity: 0,
-	x: -200,
-	duration: 0.8,
-});
+if (document.body.classList == 'home-page') {
+	const stars = gsap.utils.toArray('.fa-star');
+	gsap.from(stars, {
+		scrollTrigger: {
+			trigger: stars,
+			start: '5px 90%',
+		},
+		stagger: 0.09,
+		opacity: 0.5,
+		scale: 0.5,
+		// delay: 1,
+	});
+}
 
-const stars = gsap.utils.toArray('.fa-star');
-gsap.from(stars, {
-	scrollTrigger: {
-		trigger: stars,
-		start: '5px 90%',
-	},
-	stagger: 0.09,
-	opacity: 0.5,
-	scale: 0.5,
-	// delay: 1,
-});
+if (document.body.classList == 'about-page') {
+	gsap.from('.aff-box', {
+		scrollTrigger: {
+			trigger: '.aff-box',
+			start: '10px 90%',
+		},
+		opacity: 0,
+		x: -200,
+		duration: 0.8,
+	});
+}
