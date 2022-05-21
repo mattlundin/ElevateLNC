@@ -1081,8 +1081,7 @@ textarea {
 }
 
 .blog-card2 {
-	min-height: 600px;
-	height: 100%;
+	max-height: 100%;
 	margin: 0 auto 3rem;
 	padding: 1rem;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.164);
@@ -1099,7 +1098,7 @@ textarea {
 }
 
 .blog-img2 {
-	height: 350px;
+	max-height: 350px;
 	width: 50%;
 	margin: 0 auto 1rem;
 }
@@ -1155,7 +1154,7 @@ textarea {
 .blog-body {
 	margin: 0 2rem 5rem;
 	padding: 0 10% 4rem;
-	border: 5px groove var(--dark-blue);
+	border: 6px groove var(--gold);
 }
 
 .blog-post-box {
