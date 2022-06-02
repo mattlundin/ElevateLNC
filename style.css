@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat:wght@400;600&family=Raleway:wght@400;700&display=swap');
 
-@import url('https://db.onlinewebfonts.com/c/d4f5fcc79b23365515f5c98b7efea6e9?family=Feeling+Passionate+Personal+Use');
+/* @import url('https://db.onlinewebfonts.com/c/d4f5fcc79b23365515f5c98b7efea6e9?family=Feeling+Passionate+Personal+Use'); */
 
 :root {
 	--off-white: #f7f7f9;
@@ -426,6 +426,7 @@ h3 {
 	position: absolute;
 	max-height: 350px;
 	max-width: 450px;
+	z-index: -1;
 }
 
 .services-top .header h1 {
@@ -652,7 +653,7 @@ h3 {
 	margin-bottom: 3rem;
 }
 
-.row {
+/* .row {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -664,7 +665,7 @@ h3 {
 	background-color: var(--dark-blue);
 	border-radius: 10px;
 	opacity: 0;
-}
+} */
 
 .blue {
 	font-weight: bold;
@@ -1021,6 +1022,175 @@ textarea {
 	z-index: -1;
 }
 
+/** ===== BLOG =====  */
+.blog-container {
+	margin: 0;
+}
+
+.blog-card {
+	max-height: 100%;
+	width: 80%;
+	margin: 0 auto 3rem;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.blog-card h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+	background-color: var(--dark-blue);
+	color: var(--off-white);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+/* BLOG PAGE TITLE UNDERLINE ANIMATION */
+.blog-card h3 a {
+	position: relative;
+	display: inline-block;
+	margin: 3px 7px;
+	padding: 1rem;
+	color: var(--off-white);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1;
+}
+
+/* BLOG PAGE TITLE UNDERLINE ANIMATION */
+.blog-card h3 a:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	bottom: 10px;
+	left: 0;
+	background-color: var(--gold);
+	border-radius: 1px;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.3s ease-out;
+}
+
+/* BLOG PAGE TITLE UNDERLINE ANIMATION */
+.blog-card h3 a:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.blog-img {
+	max-height: 350px;
+	width: 50%;
+	margin: 0 auto 1rem;
+}
+
+.blog-img img {
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+}
+
+.blog-card p {
+	margin: 1rem;
+}
+
+.btn-container {
+	width: 100%;
+}
+
+.blog-btn {
+	height: 40px;
+	width: 120px;
+	margin: 1rem;
+	font-size: 1rem;
+	outline: none;
+	border: 2px groove var(--dark-blue);
+	border-radius: 5px;
+	box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.464);
+	cursor: pointer;
+}
+
+.blog-btn a {
+	color: var(--dark-blue);
+	font-weight: bold;
+}
+
+.blog-btn:hover {
+	background-color: #d7e2ee;
+}
+
+.blog-btn:active {
+	transform: scale(0.95);
+}
+
+/** BLOG POSTS  */
+
+.post-container {
+	padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.gray-blog {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	height: 200px;
+	width: 100vw;
+	background-color: var(--light-gray);
+	z-index: -100;
+}
+
+.blog-title {
+	text-align: center;
+	width: 100%;
+	/* margin: 3rem 0; */
+	font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+/* .blog-banner {
+	height: auto;
+	min-height: 200px;
+	width: auto;
+}
+
+.blog-banner img {
+	height: 100%;
+	min-height: 200px;
+	width: 100%;
+	object-fit: contain;
+} */
+
+.blog-body {
+	margin: 230px 2rem 5rem;
+	padding: 0 10% 4rem;
+	border: 6px groove var(--gold);
+}
+
+.blog-post-box {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.blog-post-box img {
+	height: 100%;
+	width: 100%;
+	margin: 1rem 0 2rem;
+}
+
+.blog-body p a {
+	color: var(--dark-blue);
+	/* font-weight: bold; */
+}
+
+.blog-heading {
+	margin: 3rem 0 2rem;
+}
+
+.blog-ul {
+	margin-left: 30px;
+}
+
 footer {
 	display: flex;
 	flex-direction: column;
@@ -1128,6 +1298,9 @@ footer {
 	.name {
 		bottom: 0;
 		left: 400px;
+	}
+	.blog-img {
+		width: 60%;
 	}
 }
 
@@ -1341,10 +1514,13 @@ footer {
 	.contact-us {
 		margin: 2rem 0 0;
 	}
+	.blog-img {
+		width: 80%;
+	}
 }
 @media screen and (max-width: 700px) {
 	.home-img-container {
-		min-width: 90%;
+		min-width: 83%;
 	}
 	.bottom {
 		padding: 0;
@@ -1364,6 +1540,9 @@ footer {
 @media screen and (max-width: 540px) {
 	.nav {
 		padding: 0 0.5rem;
+	}
+	.home-img-container {
+		min-width: 96%;
 	}
 	.test-card {
 		height: auto;
@@ -1437,6 +1616,9 @@ footer {
 	.form-container h3 {
 		margin: 0.5rem;
 		font-size: 1.15rem;
+	}
+	.blog-card {
+		width: 96%;
 	}
 }
 @media screen and (max-width: 490px) {

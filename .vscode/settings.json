@@ -1,4 +1,6 @@
 {
 	"liveServer.settings.port": 5502,
-	"cSpell.words": ["AALNC", "abouts", "CRNA", "ELNC", "medicolegal"]
+	"cSpell.words": ["AALNC", "abouts", "CRNA", "ELNC", "medicolegal"],
+	"prettier.jsxBracketSameLine": true,
+	"prettier.jsxSingleQuote": true
 }
