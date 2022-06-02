@@ -77,7 +77,7 @@ for (i = 0; i < accordion.length; i++) {
 }
 
 //~========== BLOG =============
-const blogPosts = [];
+// const blogPosts = [];
 
 //! Tab icon???
 
