@@ -1149,6 +1149,7 @@ textarea {
 	text-align: center;
 	width: 100%;
 	/* margin: 3rem 0; */
+	margin-top: 2rem;
 	font-size: clamp(1.8rem, 5vw, 3rem);
 }
 
@@ -1186,7 +1187,8 @@ textarea {
 
 .blog-body p a {
 	color: var(--dark-blue);
-	/* font-weight: bold; */
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .blog-heading {
@@ -1520,6 +1522,9 @@ footer {
 	.contact-us {
 		margin: 2rem 0 0;
 	}
+	.blog-body {
+		margin-top: 2rem;
+	}
 	.blog-img {
 		width: 80%;
 	}
@@ -1642,6 +1647,9 @@ footer {
 	}
 }
 @media screen and (max-width: 450px) {
+	.header h1 {
+		font-size: 1.9rem;
+	}
 	.home-testimonial {
 		padding: 4rem 2rem;
 		font-size: 1.3rem;
@@ -1670,8 +1678,11 @@ footer {
 		font-size: 2.2rem;
 	}
 	#contact .header h1 {
-		font-size: 2rem;
+		/* font-size: 2rem; */
 		padding-top: 1.5rem;
+	}
+	.blog-title {
+		margin-top: 1rem;
 	}
 	footer p {
 		font-size: 14px;
@@ -1684,13 +1695,12 @@ footer {
 	.box h4 {
 		font-size: 1.2rem;
 	}
-	.header h1 {
-		font-size: 1.5rem;
-	}
+
 	#contact .header h1 {
 		padding-top: 0.8rem;
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
+
 	.info-work {
 		padding: 0 10px;
 	}
