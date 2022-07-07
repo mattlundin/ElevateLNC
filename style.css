@@ -1049,9 +1049,13 @@ textarea {
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.164);
 }
 
+.blog-card-date {
+	margin-left: 5rem;
+}
+
 .blog-card h3 {
 	text-align: center;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
 	font-size: clamp(1.5rem, 3vw, 2.5rem);
 	background-color: var(--dark-blue);
 	color: var(--off-white);
@@ -1095,7 +1099,7 @@ textarea {
 .blog-img {
 	max-height: 350px;
 	width: 50%;
-	margin: 0 auto 1rem;
+	margin: 1rem auto 1rem;
 }
 
 .blog-img img {
@@ -1150,7 +1154,19 @@ textarea {
 	width: 100%;
 	/* margin: 3rem 0; */
 	margin-top: 2rem;
+	margin-bottom: 0;
 	font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.header .date {
+	font-size: 1.3rem;
+	margin-right: auto;
+	margin-left: 23%;
+}
+
+.indent {
+	margin-left: 3rem;
+	font-size: 1;
 }
 
 /* .blog-banner {
@@ -1291,6 +1307,9 @@ footer {
 		margin: 0;
 		padding: 5px;
 	}
+	.header .date {
+		margin-left: 20%;
+	}
 }
 @media screen and (max-width: 1040px) {
 	.testimonials {
@@ -1309,6 +1328,9 @@ footer {
 	}
 	.blog-img {
 		width: 60%;
+	}
+	.header .date {
+		margin-left: 15%;
 	}
 }
 
@@ -1546,6 +1568,9 @@ footer {
 		width: 100%;
 		padding: 0;
 	}
+	.blog-card-date {
+		margin-left: 3rem;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -1628,8 +1653,14 @@ footer {
 		margin: 0.5rem;
 		font-size: 1.15rem;
 	}
+	.header .date {
+		margin-left: 7%;
+	}
 	.blog-card {
 		width: 96%;
+	}
+	.blog-card-date {
+		margin-left: 2rem;
 	}
 	/* .post-container {
 		padding: 10px;
