@@ -1050,7 +1050,7 @@ textarea {
 }
 
 .blog-card-date {
-	margin-left: 5rem;
+	text-align: center;
 }
 
 .blog-card h3 {
@@ -1160,8 +1160,7 @@ textarea {
 
 .header .date {
 	font-size: 1.3rem;
-	margin-right: auto;
-	margin-left: 23%;
+	text-align: center;
 }
 
 .indent {
@@ -1307,9 +1306,6 @@ footer {
 		margin: 0;
 		padding: 5px;
 	}
-	.header .date {
-		margin-left: 20%;
-	}
 }
 @media screen and (max-width: 1040px) {
 	.testimonials {
@@ -1328,9 +1324,6 @@ footer {
 	}
 	.blog-img {
 		width: 60%;
-	}
-	.header .date {
-		margin-left: 15%;
 	}
 }
 
@@ -1568,9 +1561,6 @@ footer {
 		width: 100%;
 		padding: 0;
 	}
-	.blog-card-date {
-		margin-left: 3rem;
-	}
 }
 
 @media screen and (max-width: 540px) {
@@ -1653,14 +1643,8 @@ footer {
 		margin: 0.5rem;
 		font-size: 1.15rem;
 	}
-	.header .date {
-		margin-left: 7%;
-	}
 	.blog-card {
 		width: 96%;
-	}
-	.blog-card-date {
-		margin-left: 2rem;
 	}
 	/* .post-container {
 		padding: 10px;
